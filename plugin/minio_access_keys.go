@@ -66,7 +66,7 @@ func (b *backend) minioAccessKeyCreate(ctx context.Context, s logical.Storage,
 
     b.Logger().Info("Adding policy to minio user", "accessKeyId", accessKeyId,
 	"policy", policy)
-    err = client.SetPolicy(policy, accessKeyId, false)
+    err = client.SetPolicy(policy, accessKeyId, false)      //using updated method
     if err != nil {
 	b.Logger().Error("Setting minio user policy failed", "accessKeyId", accessKeyId,
 	    "policy", policy, "error", err)
