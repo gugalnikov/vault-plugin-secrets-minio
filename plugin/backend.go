@@ -4,8 +4,8 @@ import (
     "context"
     "sync"
 
-    "github.com/hashicorp/vault/logical"
-    "github.com/hashicorp/vault/logical/framework"
+    "github.com/hashicorp/vault/sdk/logical"
+    "github.com/hashicorp/vault/sdk/framework"
 
     "github.com/minio/minio/pkg/madmin"
 )
