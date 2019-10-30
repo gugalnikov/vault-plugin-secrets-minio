@@ -5,8 +5,8 @@ import (
 
     minio "github.com/gugalnikov/vault-plugin-secrets-minio/plugin"
     hclog "github.com/hashicorp/go-hclog"
-    "github.com/hashicorp/vault/sdk/helper/pluginutil"
-    "github.com/hashicorp/vault/sdk/logical"
+    "github.com/hashicorp/vault/api"
+    "github.com/hashicorp/vault/sdk/plugin"
 )
 
 func main() {
