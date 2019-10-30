@@ -3,10 +3,10 @@ package main
 import (
     "os"
 
-    minio "github.com/kula/vault-plugin-secrets-minio/plugin"
+    minio "github.com/gugalnikov/vault-plugin-secrets-minio/plugin"
     hclog "github.com/hashicorp/go-hclog"
-    "github.com/hashicorp/vault/helper/pluginutil"
-    "github.com/hashicorp/vault/logical/plugin"
+    "github.com/hashicorp/vault/sdk/helper/pluginutil"
+    "github.com/hashicorp/vault/sdk/logical"
 )
 
 func main() {
